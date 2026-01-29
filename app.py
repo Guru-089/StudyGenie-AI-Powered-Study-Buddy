@@ -2,8 +2,8 @@ import streamlit as st
 from groq import Groq
 from pypdf import PdfReader
 
-st.set_page_config(page_title="AI Study Assistant")
-st.title("🎓 AI Student Study Assistant (Groq)")
+st.set_page_config(page_title="StudyGenie AI Study Assistant")
+st.title("🎓 StudyGenie-An AI Student Study Assistant ")
 
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
@@ -60,4 +60,5 @@ with tab3:
             st.success(response.choices[0].message.content)
 
 st.markdown("---")
-st.markdown("Built by **Jagan** | AI Study Assistant using Groq LLaMA 3.1")
+st.markdown("Built by **GURU** | StudyGenie-An AI Student Study Assistant LLaMA 3.1")
+
